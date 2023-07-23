@@ -24,7 +24,7 @@ const nextConfig = {
         source: '/old-blog/:slug',
         destination: '/news/:slug',
         permanent: false,
-      },
+      }, 
       // Wildcard Path Matching - will match `/blog/a` and `/blog/a/b`
       {
         source: '/posts/:slug*',
