@@ -63,6 +63,7 @@ export default function Post({slug, host, post, posts, preview }) {
               />
               <PostBody content={post.content} />
               <footer>
+                <p>{slug}</p> 
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
               </footer>
             </article>
