@@ -87,7 +87,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   previewData,
 
 }) => {
-
+  console.log(params);
   const slug = params?.slug;
  
   const host = req.headers.host;
