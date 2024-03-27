@@ -29,13 +29,13 @@ export default async function preview(
   res.setPreviewData({
     post: {
       id: post.databaseId,
-      slug: post.slug+"-1",
+      slug: post.slug,
       status: post.status,
     },
   })
 
   // Redirect to the path from the fetched post
   // We don't redirect to `req.query.slug` as that might lead to open redirect vulnerabilities
-  res.writeHead(307, { Location: `/posts/${post.slug || post.databaseId}` })
+  res.writeHead(307, { Location: `/${post.slug || post.databaseId}` })
   res.end()
 }
