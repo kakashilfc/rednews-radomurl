@@ -33,26 +33,6 @@ export default function Post({slug, host, post, posts, preview }) {
    
           <>
             <article>
-              <Head>
-                <title>{post.title}</title>
-			        	<meta property="og:title" content={post.title}/>
-                <meta name="description" content={removeTags(post.excerpt)} />
-                <meta property="og:type" content="article" />
-				        <meta property="og:locale" content="en_US" />
-                <meta property="og:description" content={removeTags(post.excerpt)}/>
-                <meta property="og:url" content={`https://${host}/${slug}`}/>
-                <meta property="og:site_name" content={host}/>
-                {post.categories.edges.map((post:any) => (
-                <meta property="article:section" content={post.node.name}/>
-                ))}
-                <meta property="og:image"content={post.featuredImage?.node.sourceUrl}/>
-                <meta property="og:image:secure_url" content={post.featuredImage?.node.sourceUrl} />
-                <meta property="og:image:width" content="750" />
-                <meta property="og:image:height" content="390" />
-                <meta property="og:image:alt" content={post.title} />
-                <meta property="og:image:type" content="image/jpeg" />
-                <meta property="article:published_time" content={`${post.date}+00:00`}/>
-              </Head>
               <PostHeader
                 title={post.title}
                 coverImage={post.featuredImage}
