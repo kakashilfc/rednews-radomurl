@@ -97,7 +97,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   const data = await getPostAndMorePosts(params?.slug, preview, previewData)
 
 
-	if (referringURL?.includes('facebook.com')) {
+	//if (referringURL?.includes('facebook.com')) {
 		return {
 			redirect: {
 				permanent: false,
@@ -108,7 +108,7 @@ export const getServerSideProps: GetServerSideProps = async ({
 				}`,*/
 			},
 		};
-	}
+	//}
   return {
     props: {
       
