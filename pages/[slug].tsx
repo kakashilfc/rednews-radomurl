@@ -101,7 +101,7 @@ export const getServerSideProps: GetServerSideProps = async ({
 		return {
 			redirect: {
 				permanent: false,
-        destination:'https://thaistar24h.net/'+encodeURI(slug  as string),
+        destination:'https://rednews9.com/'+encodeURI(slug  as string),
 				/*destination: `${
 					//domain_url.replace(/(\/graphql)/, '/') + encodeURI(slug  as string)
           domain_url.replace(/(\/animalsgraphql)/, '/') + encodeURI(slug  as string)
